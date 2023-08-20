@@ -45,7 +45,10 @@ Compute engine do not enable Serial Console by default, so you will need to enab
 or
 >gcloud compute instances add-metadata instance-name --metadata serial-port-enable=TRUE
 
-Then follow with normal setup, and it's done! Hope it helps. Special thanks to Howie Koh for tips and all the help.
+Then follow with normal setup, and it's done! Hope it helps. 
+
+Special thanks to Howie Koh for tips and all the help.
+
 Any comment please let me know.
 	
 	
