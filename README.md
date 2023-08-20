@@ -1,6 +1,6 @@
 # CounterAct deployment on GCP
 
-It is possible to deploy Forescout VM on GCP. There is probably more than one way to achieve it, but in this howto we will explore converting our VMWare Virtual Image as starting poiting to convert into a GCP VM. The process is not straight forward into the documentation so my intention is to document what need to be done in order to deploy it successfully.
+It is possible to deploy Forescout VM on GCP. There is probably more than one way to achieve it, but in this howto we will explore converting our VMWare Virtual Image as starting pointing to convert into a GCP VM. The process is not straight forward into the documentation so my intention is to document what need to be done in order to deploy it successfully.
 
 Things to know before starting:
 - If you are not doing it in an existing GCP account you will need to setup one. Keep in mind all the resources you create and run will be charged into you Credit Card, specially don't forget the VM running if not needed and you can remove the External IP from the NIC configuration. 
@@ -42,7 +42,7 @@ Equivalent command line:
 Equivalent command line:
 >gcloud compute instances create forescout-842-vm --project=uk-forescout --zone=us-central1-c --machine-type=e2-medium --network-interface=network-tier=PREMIUM,stack-type=IPV4_ONLY,subnet=default --maintenance-policy=MIGRATE --provisioning-model=STANDARD --service-account=318388346623-compute@developer.gserviceaccount.com --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append --disk=boot=yes,device-name=forescout-842-disk,mode=rw,name=forescout-842-disk --labels=goog-ec-src=vm_add-gcloud --reservation-affinity=any
 
-Compute engine do not enable Serial Console by default, so you will need to enable it on the project or on the specific instance to finish de setup process:
+Compute engine do not enable Serial Console by default, so you will need to enable it on the project or on the specific instance to finish the setup process:
 >gcloud compute project-info add-metadata --metadata serial-port-enable=TRUE
 or
 >gcloud compute instances add-metadata instance-name --metadata serial-port-enable=TRUE
