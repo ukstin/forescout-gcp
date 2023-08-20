@@ -12,13 +12,15 @@ Things to know before starting:
 
 <img width="808" alt="image" src="https://github.com/ukstin/forescout-gcp/assets/23662994/e771e69e-41af-4814-a9b4-9d9fb0e271c2">
 
-2. Go to Compute Engine and create a new disk. 
-	Name: Define a name for the disk
-	Source: Virtual Disk (VMDK, VHD)
-	Virtual Disk File: search for the VMDK file you imported in your bucket on the first step
-	Operating System on virtual disk: CentOS 7
-	I do not tried to install guest packages because Forescout image do not have the default package manager into the CentOS. So it will generate an error if you try.
-	This process take a long time to finish, this is the time to get a cup of coffee.
+2. Go to Compute Engine and create a new disk.
+ - Name: Define a name for the disk
+ - Source: Virtual Disk (VMDK, VHD)
+ - Virtual Disk File: search for the VMDK file you imported in your bucket on the first step
+ - Operating System on virtual disk: CentOS 7
+
+I do not tried to install guest packages because Forescout image do not have the default package manager into the CentOS. So it will generate an error if you try.
+
+This process take a long time to finish, this is the time to get a cup of coffee.
 
 <img width="800" alt="image" src="https://github.com/ukstin/forescout-gcp/assets/23662994/5782fb80-b0dd-4f1c-9314-01f40d327f0b">
 
