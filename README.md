@@ -1,4 +1,4 @@
-# CounterAct deployment on GCP
+# Forescout eyeSight deployment on GCP
 
 It is possible to deploy Forescout VM on GCP. There is probably more than one way to achieve it, but in this howto we will explore converting our VMWare Virtual Image as starting pointing to convert into a GCP VM. The process is not straight forward into the documentation so my intention is to document what need to be done in order to deploy it successfully.
 
