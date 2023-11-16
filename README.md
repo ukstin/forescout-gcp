@@ -39,6 +39,7 @@ Equivalent command line:
 4.Finally create a VM instance, the important thing here is to attach the previous created disk as the boot disk
 
 <img width="1104" alt="image" src="https://github.com/ukstin/forescout-gcp/assets/23662994/aa4df700-a777-42fa-9efe-8673b651508f">
+
 <img width="802" alt="image" src="https://github.com/ukstin/forescout-gcp/assets/23662994/7df1c394-fbcf-4183-ad02-b7a7c8f344c5">
 
 Equivalent command line:
